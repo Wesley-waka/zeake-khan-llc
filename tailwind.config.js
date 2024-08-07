@@ -9,8 +9,11 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'custom-image': "url('https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg')",
+        'custom-image': "url('https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg')",
       },
+      lineHeight: {
+        'extra-loose': '2.5', // Example custom line height
+      }
     },
   },
   plugins: [],
