@@ -198,4 +198,5 @@
 </template>
 
 <script setup>
+const isMenuOpen = ref(false);
 </script>
