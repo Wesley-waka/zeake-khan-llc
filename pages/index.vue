@@ -1,4 +1,7 @@
 <template>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
   <div class="bg-custom-image bg-cover bg-center h-screen text-white bg-transparent">
     <div class="mx-auto px-4">
       <div>
@@ -9,7 +12,14 @@
               <i class="pi pi-bars text-2xl"></i>
             </button>
           </div>
-  
+      
+          <!-- Logo for both small and large screens -->
+          <div class="flex-shrink-0 bg-transparent lg:p-2 lg:rounded-lg">
+            <NuxtLink to="/" class="flex items-center">
+              <img src="assets/images/zeake-khan.svg" alt="Sierra logo" class="h-20 lg:h-16">
+            </NuxtLink>
+          </div>
+      
           <!-- Menu items for medium and large screens -->
           <div class="hidden md:flex items-center justify-center flex-grow bg-transparent">
             <nav class="flex gap-8 text-[20px]">
@@ -18,31 +28,31 @@
               <a href="#" class="hover:underline">Products</a>
             </nav>
           </div>
-  
+      
           <div>
-            <button class="rounded-md p-4">Find House</button>
+            <button class="rounded-md p-4 bg-green-600 text-white">Find House</button>
           </div>
         </div>
+      
+        <!-- Mobile menu -->
+        <div v-if="isMenuOpen" class="md:hidden mt-2">
+          <nav class="flex flex-col gap-4 text-[20px]">
+            <a href="#" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">About</a>
+            <a href="#" class="hover:underline">Products</a>
+          </nav>
+        </div>
       </div>
-  
-      <!-- Mobile menu -->
-      <div v-if="isMenuOpen" class="md:hidden mt-2">
-        <nav class="flex flex-col gap-4 text-[20px]">
-          <a href="#" class="hover:underline">Home</a>
-          <a href="#" class="hover:underline">About</a>
-          <a href="#" class="hover:underline">Products</a>
-        </nav>
-      </div>
-    </div>
+  </div>      
   
     <!-- Centered text -->
     <div class="flex pl-4 items-center h-full">
-      <span class="text-5xl">
-        Find the best<br/> 
-        <span class="text-6xl mt-2 pb-4 leading-extra-loose">
+      <span class="text-5xl font-pacifico">
+        Find the best<br/>
+        <span class="text-6xl mt-2 pb-4 leading-extra-loose text-yellow-500 font-pacifico">
           Commercial Real Estate
-        </span> 
-        <br/>in NY tri state area
+        </span>
+        <br/>in NY tri-state area
       </span>
     </div>
   </div>

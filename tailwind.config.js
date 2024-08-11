@@ -13,7 +13,15 @@ export default {
       },
       lineHeight: {
         'extra-loose': '2.5', // Example custom line height
-      }
+      },
+      fontFamily: {
+        pacifico: ['Pacifico', 'cursive'],
+      },
+      colors: {
+        yellow: {
+          500: '#F7F700', // Custom yellow color
+        },
+      },
     },
   },
   plugins: [],

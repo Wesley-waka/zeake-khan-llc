@@ -34,5 +34,12 @@ tailwindcss: {
   },
   config: {},
   viewer: true,
+},
+app: {
+  head: {
+    link: [
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap' }
+    ]
+  }
 }
 })
