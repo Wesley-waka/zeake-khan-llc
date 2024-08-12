@@ -30,7 +30,7 @@
           </div>
       
           <div>
-            <button class="rounded-md p-4 bg-green-600 text-white">Find House</button>
+            <button class="rounded-md p-4 mycol text-white">Find House</button>
           </div>
         </div>
       
@@ -49,32 +49,32 @@
     <div class="flex pl-4 items-center h-full">
       <span class="text-5xl font-pacifico">
         Find the best<br/>
-        <span class="text-6xl mt-2 pb-4 leading-extra-loose text-yellow-500 font-pacifico">
+        <span class="text-6xl mt-2 pb-4 leading-extra-loose text-brown-500 font-pacifico">
           Commercial Real Estate
         </span>
         <br/>in NY tri-state area
       </span>
     </div>
   </div>
-  <section class="bg-gray-800 py-16 text-white">
+  <section class="mycol py-16 text-white">
     <div class="container mx-auto px-4">
       <h2 class="text-4xl font-bold text-center mb-8">Our Services</h2>
       <p class="text-lg text-center mb-12">We offer a range of services to meet your needs. Discover how we can help you achieve your goals.</p>
       <div class="flex flex-wrap justify-center gap-8">
         <!-- Service One -->
-        <div class="bg-gray-700 p-6 rounded-lg shadow-lg w-full md:w-1/3">
+        <div class="mycol1 p-6 rounded-lg shadow-lg w-full md:w-1/3">
           <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" alt="Service One" class="w-full h-48 object-cover rounded-md mb-4">
           <h3 class="text-2xl font-semibold mb-4">Renting</h3>
           <p class="text-base">We offer a range of renting space for companies amnd organizations in need of large spaces for short periods</p>
         </div>
         <!-- Service Two -->
-        <div class="bg-gray-700 p-6 rounded-lg shadow-lg w-full md:w-1/3">
+        <div class="mycol1 p-6 rounded-lg shadow-lg w-full md:w-1/3">
           <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg" alt="Service Two" class="w-full h-48 object-cover rounded-md mb-4">
           <h3 class="text-2xl font-semibold mb-4">Leasing</h3>
           <p class="text-base">We offer a range of leasing space for companies amnd organizations in need of large spaces for extendedd periods</p>
         </div>
         <!-- Service Three -->
-        <div class="bg-gray-700 p-6 rounded-lg shadow-lg w-full md:w-1/3">
+        <div class="mycol1 p-6 rounded-lg shadow-lg w-full md:w-1/3">
           <img src="https://images.pexels.com/photos/1481105/pexels-photo-1481105.jpeg" alt="Service Three" class="w-full h-48 object-cover rounded-md mb-4">
           <h3 class="text-2xl font-semibold mb-4">Shared spaces</h3>
           <p class="text-base">EWe offer shared spaces for companies in need of small spaces for lean teams</p>
@@ -83,7 +83,7 @@
     </div>
   </section>
 
-  <section class="bg-gray-900 py-16 text-white">
+  <section class="mycol my-4 py-16 text-white">
     <div class="container mx-auto px-4">
       <h2 class="text-4xl font-bold text-center mb-8">Contact Us</h2>
       <p class="text-lg text-center mb-12">Have questions or need assistance? Fill out the form below, and we’ll get back to you as soon as possible.</p>
@@ -102,7 +102,7 @@
             <textarea id="message" name="message" rows="4" required class="w-full p-3 border border-gray-600 rounded-md bg-gray-900 text-white placeholder-gray-400"></textarea>
           </div>
           <div class="text-center">
-            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">Send Message</button>
+            <button type="submit" class="mycol1 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">Send Message</button>
           </div>
         </form>
       </div>
@@ -169,7 +169,7 @@
       </div>
     </div>
   </section>
-  <footer class="bg-gray-800 py-8 text-white">
+  <footer class="mycol py-8 text-white">
     <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row md:justify-between">
         <!-- Footer Left -->
@@ -210,3 +210,12 @@
 <script setup>
 const isMenuOpen = ref(false);
 </script>
+
+<style>
+.mycol{
+  background-color: rgb(158,40,41) ;
+}
+.mycol1{
+  background-color: rgb(98,1,49);
+}
+</style>
