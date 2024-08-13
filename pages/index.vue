@@ -83,26 +83,26 @@
     </div>
   </section>
 
-  <section class="mycol my-4 py-16 text-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-8">Contact Us</h2>
-      <p class="text-lg text-center mb-12">Have questions or need assistance? Fill out the form below, and we’ll get back to you as soon as possible.</p>
+  <section class=" my-4 py-16 text-white bg-gray-100">
+    <div class="container   mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">Contact Us</h2>
+      <p class="text-lg text-center mb-12 text-gray-800">Have questions or need assistance? Fill out the form below, and we’ll get back to you as soon as possible.</p>
       <div class="flex justify-center">
-        <form class="w-full max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
+        <form class="w-full max-w-lg mx-auto  p-8 rounded-lg shadow-lg bg-blue-500">
           <div class="mb-4">
             <label for="name" class="block text-sm font-semibold mb-2">Name</label>
-            <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-600 rounded-md bg-gray-900 text-white placeholder-gray-400">
+            <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-600 rounded-md text-gray-700  placeholder-gray-400">
           </div>
           <div class="mb-4">
             <label for="email" class="block text-sm font-semibold mb-2">Email</label>
-            <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-600 rounded-md bg-gray-900 text-white placeholder-gray-400">
+            <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-600 rounded-md text-gray-700 placeholder-gray-400">
           </div>
           <div class="mb-4">
             <label for="message" class="block text-sm font-semibold mb-2">Message</label>
-            <textarea id="message" name="message" rows="4" required class="w-full p-3 border border-gray-600 rounded-md bg-gray-900 text-white placeholder-gray-400"></textarea>
+            <textarea id="message" name="message" rows="4" required class="w-full p-3 border border-gray-600 rounded-md text-gray-700   text-white placeholder-gray-400"></textarea>
           </div>
           <div class="text-center">
-            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">Send Message</button>
+            <button type="submit" class="mycol hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">Send Message</button>
           </div>
         </form>
       </div>
@@ -174,10 +174,10 @@
       <div class="flex flex-col md:flex-row md:justify-between">
         <!-- Footer Left -->
         <div class="mb-4 md:mb-0">
-          <h3 class="text-2xl font-bold mb-2">Company Name</h3>
-          <p class="text-base">1234 Main Street, City, State, ZIP</p>
-          <p class="text-base">Phone: (123) 456-7890</p>
-          <p class="text-base">Email: info@example.com</p>
+          <h3 class="text-2xl font-bold mb-2"><a href="https://www.zemy-group.com">Zemy-Group.com</a> </h3>
+          <p class="text-base">147 W 35thst, New York, NY 10001</p>
+          <p class="text-base">Phone: +1(917) 6094-597</p>
+          <p class="text-base">Email: info@zemy-group.com</p>
         </div>
         <!-- Footer Center -->
         <div class="mb-4 md:mb-0">
@@ -201,7 +201,7 @@
         </div>
       </div>
       <div class="text-center mt-8">
-        <p class="text-sm">&copy; 2024 Company Name. All rights reserved.</p>
+        <p class="text-sm">&copy; 2024 Zemy-Group. All rights reserved.</p>
       </div>
     </div>
   </footer>
