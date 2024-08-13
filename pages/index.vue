@@ -102,7 +102,7 @@
             <textarea id="message" name="message" rows="4" required class="w-full p-3 border border-gray-600 rounded-md bg-gray-900 text-white placeholder-gray-400"></textarea>
           </div>
           <div class="text-center">
-            <button type="submit" class="mycol1 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">Send Message</button>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">Send Message</button>
           </div>
         </form>
       </div>
