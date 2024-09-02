@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@primevue/nuxt-module',
     '@nuxtjs/tailwindcss'
 ],
+  plugins: ["~/plugins/preline.client.ts"],
 primevue: {
   options: {
     theme: {

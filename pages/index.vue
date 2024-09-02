@@ -24,8 +24,8 @@
           <div class="hidden md:flex items-center justify-center flex-grow bg-transparent">
             <nav class="flex gap-8 text-[20px]">
               <a href="#" class="hover:underline">Home</a>
-              <a href="#" class="hover:underline">About</a>
-              <a href="#" class="hover:underline">Products</a>
+              <a href="/about-us" class="hover:underline">About</a>
+              <a href="/contact-us" class="hover:underline">Contact Us</a>
             </nav>
           </div>
       
