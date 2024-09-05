@@ -1,108 +1,180 @@
 <template>
-  <div class="hidden md:flex items-center justify-center flex-grow bg-transparent">
-    <nav class="flex gap-8 text-[20px]">
-      <a href="#" class="hover:underline">Home</a>
-      <a href="/about-us" class="hover:underline">About</a>
-      <a href="/contact-us" class="hover:underline">Contact Us</a>
-    </nav>
-  </div>
-
-  <div v-if="isMenuOpen" class="md:hidden mt-2">
-    <nav class="flex flex-col gap-4 text-[20px]">
-      <a href="#" class="hover:underline">Home</a>
-      <a href="#" class="hover:underline">About</a>
-      <a href="#" class="hover:underline">Products</a>
-    </nav>
-  </div>
-
-  <div class="max-w-full mx-[40px] m-2.5 my-[84px]">
-  <div class="flex flex-row justify-between w-full">
-    <h1 class="font-medium text-[50px] leading-tight">
-      <span class="text-gray-500">Our Legacy of</span> <br>Building Dream
-    </h1>
-
-    <p class="w-[500px] text-[200px] font-light text-gray-500">Urbanice is a dream builder delivering quality homes that blend beauty,comfort and sustainability for your future</p>
-
-  </div>
-
-
-  <div class="flex flex-row space-x-6 items-center align-middle mt-3">
-    <img src="/about-1.jpg" alt="about Real Estate" class="w-full h-[250px] rounded-[32px]">
-    <img src="/about-2.jpg" alt="about Real Estate" class="w-full h-[250px] rounded-[32px]">
-    <img src="/about-3.jpg" alt="about Real Estate" class="w-full h-[250px] rounded-[32px]">
-  </div>
-
+  <div class="mx-auto px-4 pt-4">
     <div>
-      <h2 class=" font-medium mt-4 text-[36px] leading-[40px] text-center"><span class="text-gray-500">Stress Free </span> Step<br>to your Dream home</h2>
-      <div class="mt-4">
-        <div class="bg-gray-900 w-[400px] h-[200px] rounded-md p-5 text-white font-light ">
-          <span class="font-medium text-2xl ">01.<br>
-          Dream and discover <br>
-          </span>
-          <span class="w-[20px]">Envision your perfect home with our guidance and expertise Envision your perfect home with our guidance and expertisee</span>
+      <div class="flex justify-between items-center h-16 bg-transparent">
+        <!-- Hamburger menu for small screens -->
+        <div class="md:hidden">
+          <button @click="isMenuOpen = !isMenuOpen" class="text-white focus:outline-none bg-transparent">
+            <i class="pi pi-bars text-2xl"></i>
+          </button>
+        </div>
+
+        <!-- Logo for both small and large screens -->
+        <div class="flex-shrink-0 bg-transparent lg:p-2 lg:rounded-lg">
+          <NuxtLink to="/" class="flex items-center">
+            <img src="assets/images/zeake-khan.svg" alt="Sierra logo" class="h-20 lg:h-16">
+          </NuxtLink>
+        </div>
+
+        <!-- Menu items for medium and large screens -->
+        <div class="hidden md:flex items-center justify-center flex-grow bg-transparent">
+          <nav class="flex gap-8 text-[20px]">
+            <a href="#" class="hover:underline">Home</a>
+            <a href="/about-us" class="hover:underline">About</a>
+            <a href="/contact-us" class="hover:underline">Contact Us</a>
+          </nav>
+        </div>
+
+        <div>
+          <button class="rounded-md p-4 mycol text-white">Find House</button>
         </div>
       </div>
+
+      <!-- Mobile menu -->
+      <div v-if="isMenuOpen" class="md:hidden mt-2">
+        <nav class="flex flex-col gap-4 text-[20px]">
+          <a href="#" class="hover:underline">Home</a>
+          <a href="#" class="hover:underline">About</a>
+          <a href="#" class="hover:underline">Products</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-[110rem] mx-auto  my-[84px] px-10">
+
+    <div class="flex lg:flex-row flex-col md:justify-between w-full">
+      <h1 class="font-medium text-[50px] leading-tight">
+        <span class="text-gray-500">Our Legacy of</span> <br>Building Dream
+      </h1>
+
+      <p class="md:w-[700px]  text-[30px] font-light text-gray-500">Urbanice is a dream builder delivering
+        quality homes that
+        blend beauty,comfort and sustainability for your future</p>
+
+    </div>
+
+
+    <div class="my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <img src="/about-1.jpg" alt="about Real Estate" class="w-full h-[300px] rounded-[32px]">
+      <img src="/about-2.jpg" alt="about Real Estate" class="w-full h-[300px] rounded-[32px]">
+      <img src="/about-3.jpg" alt="about Real Estate" class="w-full h-[300px] rounded-[32px]">
     </div>
 
     <div>
-      <h2 class=" font-medium mt-4 text-[36px] leading-[40px] text-center"><span class="text-gray-500">Explore </span> Your Options<br>Find Your <span class="text-gray-500">Perfect Match </span></h2>
+      <h2 class=" font-medium mt-4 text-[36px] leading-[40px] text-center"><span class="text-gray-500">Stress Free </span>
+        Step<br>to your Dream home</h2>
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-blue-800 w-full h-[200px] rounded-md p-5 text-white font-light">
+          <span class="font-medium text-2xl">01.<br> Dream and discover <br></span>
+          <span>Envision your perfect home with our guidance and expertise Envision your perfect home with our guidance
+            and expertisee</span>
+        </div>
+
+        <div class="bg-blue-800 w-full h-[200px] rounded-md p-5 text-white font-light">
+          <span class="font-medium text-2xl">01.<br> Dream and discover <br></span>
+          <span>Envision your perfect home with our guidance and expertise Envision your perfect home with our guidance
+            and expertisee</span>
+        </div>
+
+        <div class="bg-blue-800 w-full h-[200px] rounded-md p-5 text-white font-light">
+          <span class="font-medium text-2xl">01.<br> Dream and discover <br></span>
+          <span>Envision your perfect home with our guidance and expertise Envision your perfect home with our guidance
+            and expertisee</span>
+        </div>
+
+        <div class="bg-blue-800 w-full h-[200px] rounded-md p-5 text-white font-light">
+          <span class="font-medium text-2xl">01.<br> Dream and discover <br></span>
+          <span>Envision your perfect home with our guidance and expertise Envision your perfect home with our guidance
+            and expertisee</span>
+        </div>
+
+        <div class="bg-blue-800 w-full h-[200px] rounded-md p-5 text-white font-light">
+          <span class="font-medium text-2xl">01.<br> Dream and discover <br></span>
+          <span>Envision your perfect home with our guidance and expertise Envision your perfect home with our guidance
+            and expertisee</span>
+        </div>
+
+        <div class="bg-blue-800 w-full h-[200px] rounded-md p-5 text-white font-light">
+          <span class="font-medium text-2xl">01.<br> Dream and discover <br></span>
+          <span>Envision your perfect home with our guidance and expertise Envision your perfect home with our guidance
+            and expertisee</span>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div>
+      <h2 class=" font-medium mt-4 text-[36px] leading-[40px] text-center"><span class="text-gray-500">Explore </span>
+        Your Options<br>Find Your <span class="text-gray-500">Perfect Match </span></h2>
       <p class="text-center text-[14px] font-light mt-2">There are plenty of options for you to explore</p>
 
-      <div class="flex flex-row space-x-6 mt-4">
-      <div class="w-full">
-      <img src="/about-1.jpg" alt="about Real Estate" class="h-[250px] rounded-[60px]">
-        <div class="flex-col space-y-2 mt-2">
-        <h1 class="text-[20px]">Serenity Cottage</h1>
-        <h1 class="text-gray-500">For Rent/Peaceful Country Side</h1>
-        <div class="flex flex-row justify-between">
-          <h1 class="text-[20px]">$3000</h1>
-          <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-black text-white hover:bg-gray-900 focus:outline-none focus:bg-gray-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-black dark:text-white">
-            Button
-          </button>
-        </div>
-        </div>
-      </div>
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
-      <div class="w-full">
-        <img src="/about-1.jpg" alt="about Real Estate" class=" h-[250px] rounded-[60px]">
-        <div class="flex-col space-y-2 mt-2">
-          <h1 class="text-[20px]">Serenity Cottage</h1>
-          <h1 class="text-gray-500">For Rent/Peaceful Country Side</h1>
-          <div class="flex flex-row justify-between">
-            <h1 class="text-[20px]">$3000</h1>
-            <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-black text-white hover:bg-gray-900 focus:outline-none focus:bg-gray-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800">
-              Button
-            </button>
+
+        <div class="w-full">
+          <img src="/about-1.jpg" alt="about Real Estate" class="h-[250px] rounded-[60px] w-full object-cover">
+          <div class="flex-col space-y-2 mt-2">
+            <h1 class="text-[20px]">Serenity Cottage</h1>
+            <h1 class="text-gray-500">For Rent/Peaceful Country Side</h1>
+            <div class="flex flex-row justify-between">
+              <h1 class="text-[20px]">$3000</h1>
+              <button type="button"
+                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-800 focus:outline-none focus:bg-blue-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-600 dark:text-white">
+                Button
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="w-full">
-        <img src="/about-1.jpg" alt="about Real Estate" class="h-[250px] rounded-[60px]">
-        <div class="flex-col space-y-2 mt-2">
-          <h1 class="text-[20px]">Serenity Cottage</h1>
-          <h1 class="text-gray-500">For Rent/Peaceful Country Side</h1>
-          <div class="flex flex-row justify-between">
-            <h1 class="text-[20px]">$3000</h1>
-            <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-black text-white hover:bg-gray-900 focus:outline-none focus:bg-gray-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800">
-              Button
-            </button>
+        <div class="w-full">
+          <img src="/about-2.jpg" alt="about Real Estate" class="h-[250px] rounded-[60px] w-full object-cover">
+          <div class="flex-col space-y-2 mt-2">
+            <h1 class="text-[20px]">Serenity Cottage</h1>
+            <h1 class="text-gray-500">For Rent/Peaceful Country Side</h1>
+            <div class="flex flex-row justify-between">
+              <h1 class="text-[20px]">$3000</h1>
+              <button type="button"
+                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-800 focus:outline-none focus:bg-blue-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-600 dark:text-white">
+                Button
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+
+        <div class="w-full">
+          <img src="/about-3.jpg" alt="about Real Estate" class="h-[250px] rounded-[60px] w-full object-cover">
+          <div class="flex-col space-y-2 mt-2">
+            <h1 class="text-[20px]">Serenity Cottage</h1>
+            <h1 class="text-gray-500">For Rent/Peaceful Country Side</h1>
+            <div class="flex flex-row justify-between">
+              <h1 class="text-[20px]">$3000</h1>
+              <button type="button"
+                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-800 focus:outline-none focus:bg-blue-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-600 dark:text-white">
+                Button
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="text-center my-16">
-      <h1 class="font-medium mt-4 text-[36px] leading-[40px] text-center">Ready to Revolutionize Your <br> <span class="text-gray-500"> Real Estate</span> Experience</h1>
-      <h1 class="mt-2 text-[14px] font-light ">Join Our Newsletter today and discover the world of seamless property<br> management, unparalleled investment insights</h1>
+      <h1 class="font-medium mt-4 text-[36px] leading-[40px] text-center">Ready to Revolutionize Your <br> <span
+          class="text-gray-500"> Real Estate</span> Experience</h1>
+      <h1 class="mt-2 text-[14px] font-light ">Join Our Newsletter today and discover the world of seamless property<br>
+        management, unparalleled investment insights</h1>
       <div class="max-w-sm space-y-3 mx-auto">
         <div>
           <label for="hs-leading-icon" class="block text-sm font-medium mb-2 dark:text-white">Email address</label>
           <div class="relative">
-            <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="py-3 bg-white px-4 ps-11 block w-full border-black shadow-sm rounded-lg text-sm focus:z-10 focus:border-gray-600 focus:ring-gray-500 disabled:opacity-50 disabled:pointer-events-none " style="border: 0.75px solid grey" placeholder="Input your email">
+            <input type="text" id="hs-leading-icon" name="hs-leading-icon"
+              class="py-3 bg-white px-4 ps-11 block w-full border-black shadow-sm rounded-lg text-sm focus:z-10 focus:border-gray-600 focus:ring-gray-500 disabled:opacity-50 disabled:pointer-events-none "
+              style="border: 0.75px solid grey" placeholder="Input your email">
             <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-4">
-              <svg class="shrink-0 size-4 text-gray-400 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg class="shrink-0 size-4 text-gray-400 dark:text-gray-800" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
                 <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
               </svg>
@@ -155,8 +227,19 @@
 
 </script>
 
+
+
+
 <style>
-.border-color{
+.border-color {
   color: black;
+}
+
+.mycol {
+  background-color: rgb(158, 40, 41);
+}
+
+.mycol1 {
+  background-color: rgb(98, 1, 49);
 }
 </style>
