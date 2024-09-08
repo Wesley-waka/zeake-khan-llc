@@ -47,9 +47,8 @@
         <span class="text-gray-500">Our Legacy of</span> <br>Building Dream
       </h1>
 
-      <p class="md:w-[700px]  text-[30px] font-light text-gray-500">Urbanice is a dream builder delivering
-        quality homes that
-        blend beauty,comfort and sustainability for your future</p>
+      <p class="md:w-[700px]  text-[30px] font-light text-gray-500">Our diverse expertise allows us to cater to various
+        investor interests and market demands, ensuring a comprehensive approach that maximizes value.</p>
 
     </div>
 
@@ -65,39 +64,39 @@
         Step<br>to your Dream home</h2>
       <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <div class="bg-blue-800 w-full h-[200px] rounded-md p-5 text-white font-light">
-          <span class="font-medium text-2xl">01.<br> Dream and discover <br></span>
-          <span>Envision your perfect home with our guidance and expertise Envision your perfect home with our guidance
-            and expertisee</span>
+          <span class="font-medium text-2xl">01.<br> Client-Centric Approach <br></span>
+          <span>At Zeake LLC our clients are our top priority. We take the time to understand your unique needs and
+            objectives, providing personalized service that reflects your vision</span>
         </div>
 
         <div class="bg-blue-800 w-full h-[200px] rounded-md p-5 text-white font-light">
-          <span class="font-medium text-2xl">01.<br> Dream and discover <br></span>
-          <span>Envision your perfect home with our guidance and expertise Envision your perfect home with our guidance
-            and expertisee</span>
+          <span class="font-medium text-2xl">02.<br> Diversity <br></span>
+          <span>Whether you are a seasoned investor or new to commercial real estate, we are here to guide you every step
+            of the way.</span>
         </div>
 
         <div class="bg-blue-800 w-full h-[200px] rounded-md p-5 text-white font-light">
-          <span class="font-medium text-2xl">01.<br> Dream and discover <br></span>
-          <span>Envision your perfect home with our guidance and expertise Envision your perfect home with our guidance
-            and expertisee</span>
+          <span class="font-medium text-2xl">03.<br> Property Acquisition <br></span>
+          <span>We help identify and acquire properties that align with your investment goals, ensuring thorough due
+            diligence and strategic insight</span>
         </div>
 
         <div class="bg-blue-800 w-full h-[200px] rounded-md p-5 text-white font-light">
-          <span class="font-medium text-2xl">01.<br> Dream and discover <br></span>
-          <span>Envision your perfect home with our guidance and expertise Envision your perfect home with our guidance
-            and expertisee</span>
+          <span class="font-medium text-2xl">04.<br>Property Management <br></span>
+          <span>Our proactive management solutions ensure that your investments operate efficiently. We handle everything
+            from tenant relations and lease negotiations to maintenance and financial reporting</span>
         </div>
 
         <div class="bg-blue-800 w-full h-[200px] rounded-md p-5 text-white font-light">
-          <span class="font-medium text-2xl">01.<br> Dream and discover <br></span>
-          <span>Envision your perfect home with our guidance and expertise Envision your perfect home with our guidance
-            and expertisee</span>
+          <span class="font-medium text-2xl">05.<br> Portfolio Management <br></span>
+          <span>For larger investors, we offer comprehensive portfolio management services, helping to optimize and
+            diversify your commercial real estate holdings</span>
         </div>
 
         <div class="bg-blue-800 w-full h-[200px] rounded-md p-5 text-white font-light">
-          <span class="font-medium text-2xl">01.<br> Dream and discover <br></span>
-          <span>Envision your perfect home with our guidance and expertise Envision your perfect home with our guidance
-            and expertisee</span>
+          <span class="font-medium text-2xl">06.<br>Advisory Services <br></span>
+          <span>Our expert advisors provide tailored strategies to enhance investment performance, minimize risk, and
+            capitalize on emerging opportunities in the market.</span>
         </div>
       </div>
 
