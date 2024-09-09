@@ -1,48 +1,9 @@
 <template>
-  <div class="mx-auto px-4 pt-4">
-    <div>
-      <div class="flex justify-between items-center h-16 bg-transparent">
-        <!-- Hamburger menu for small screens -->
-        <div class="md:hidden">
-          <button @click="isMenuOpen = !isMenuOpen" class="text-white focus:outline-none bg-transparent">
-            <i class="pi pi-bars text-2xl"></i>
-          </button>
-        </div>
+  <Navbar />
 
-        <!-- Logo for both small and large screens -->
-        <div class="flex-shrink-0 bg-transparent lg:p-2 lg:rounded-lg">
-          <NuxtLink to="/" class="flex items-center">
-            <img src="assets/images/zeake-khan.svg" alt="Sierra logo" class="h-20 lg:h-16">
-          </NuxtLink>
-        </div>
+  <div class="max-w-[110rem] mx-auto px-10">
 
-        <!-- Menu items for medium and large screens -->
-        <div class="hidden md:flex items-center justify-center flex-grow bg-transparent">
-          <nav class="flex gap-8 text-[20px]">
-            <a href="#" class="hover:underline">Home</a>
-            <a href="/about-us" class="hover:underline">About</a>
-            <a href="/contact-us" class="hover:underline">Contact Us</a>
-          </nav>
-        </div>
-
-        <div>
-          <button class="rounded-md p-4 mycol text-white">Find House</button>
-        </div>
-      </div>
-
-      <!-- Mobile menu -->
-      <div v-if="isMenuOpen" class="md:hidden mt-2">
-        <nav class="flex flex-col gap-4 text-[20px]">
-          <a href="#" class="hover:underline">Home</a>
-          <a href="#" class="hover:underline">About</a>
-          <a href="#" class="hover:underline">Products</a>
-        </nav>
-      </div>
-    </div>
-  </div>
-  <div class="max-w-[110rem] mx-auto  my-[84px] px-10">
-
-    <div class="flex lg:flex-row flex-col md:justify-between w-full">
+    <div class="flex lg:flex-row flex-col pt-[100px] md:justify-between w-full">
       <h1 class="font-medium text-[50px] leading-tight">
         <span class="text-gray-500">Our Legacy of</span> <br>Building Dream
       </h1>
@@ -118,10 +79,7 @@
             <h1 class="text-gray-500">For Rent/Peaceful Country Side</h1>
             <div class="flex flex-row justify-between">
               <h1 class="text-[20px]">$3000</h1>
-              <button type="button"
-                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-800 focus:outline-none focus:bg-blue-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-600 dark:text-white">
-                Button
-              </button>
+
             </div>
           </div>
         </div>
@@ -133,10 +91,7 @@
             <h1 class="text-gray-500">For Rent/Peaceful Country Side</h1>
             <div class="flex flex-row justify-between">
               <h1 class="text-[20px]">$3000</h1>
-              <button type="button"
-                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-800 focus:outline-none focus:bg-blue-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-600 dark:text-white">
-                Button
-              </button>
+
             </div>
           </div>
         </div>
@@ -148,10 +103,7 @@
             <h1 class="text-gray-500">For Rent/Peaceful Country Side</h1>
             <div class="flex flex-row justify-between">
               <h1 class="text-[20px]">$3000</h1>
-              <button type="button"
-                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-800 focus:outline-none focus:bg-blue-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-600 dark:text-white">
-                Button
-              </button>
+
             </div>
           </div>
         </div>
@@ -222,8 +174,8 @@
 </template>
 
 
-<script>
-
+<script setup>
+import Navbar from '~/layouts/navbar.vue'
 </script>
 
 
