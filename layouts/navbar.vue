@@ -75,8 +75,8 @@ onUnmounted(() => {
         :class="['fixed w-full z-50   transition-colors duration-300 lg:p-[1px] ', scrolled ? 'bg-white' : 'bg-transparent']">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto py-2.5 lg:py-0">
             <!-- Logo Section Start -->
-            <a href="#" class="flex items-center">
-                <img src="~/assets/images/zeake-khan.svg" alt="Logo" class="h-8 lg:h-24">
+            <a href="/" class="flex items-center">
+                <img src="~/assets/images/zeake-khan.svg" alt="Logo" class="h-8 lg:h-20">
 
             </a>
             <!-- Logo Section End -->
@@ -116,12 +116,12 @@ onUnmounted(() => {
                     <li v-for="(link, index) in navLinks" :key="index"
                         :class="['relative group', index === navLinks.length - 1 ? 'lg:hidden' : '']">
                         <NuxtLink v-if="!link.subMenu" :to="link.path" @click="closeMenu"
-                            :class="['block py-2 pl-3 pr-4 rounded lg:p-0 whitespace-nowrap', scrolled ? 'lg:text-gray-800 text-gray-800' : ' text-gray-800']">
+                            :class="['block py-2 pl-3 pr-4 rounded lg:p-0 whitespace-nowrap', scrolled ? 'lg:text-[black] text-[white]' : ' text-[white]']">
                             {{ link.name }}
                         </NuxtLink>
                         <div v-else>
                             <a href="#" @click.prevent="toggleDropdown(index)"
-                                :class="['flex items-center py-2 pl-3 pr-4 whitespace-nowrap', scrolled ? 'text-white lg:text-gray-800' : 'text-white']">
+                                :class="['flex items-center py-2 pl-3 pr-4 whitespace-nowrap', scrolled ? 'text-[black] lg:text-[black]' : 'text-white']">
                                 {{ link.name }}
                                 <svg :class="{ 'rotate-180': dropdownStates[index] }"
                                     class="w-5 h-5 ml-1 mt-1 transform transition-transform" fill="none" viewBox="0 0 24 24"
@@ -135,7 +135,7 @@ onUnmounted(() => {
                                 class="lg:absolute bg-gray-800 rounded-lg w-full lg:w-56 lg:top-full lg:left-0 z-10">
                                 <li v-for="(subLink, subIndex) in link.subMenu" :key="subIndex">
                                     <NuxtLink :to="subLink.path" @click="closeMenu"
-                                        class="block px-4 py-2 text-white hover:bg-gray-700">
+                                        class="block px-4 py-2 text-white hover:bg-gray">
                                         {{ subLink.name }}
                                     </NuxtLink>
                                 </li>
