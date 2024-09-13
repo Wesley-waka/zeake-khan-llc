@@ -55,7 +55,7 @@
                     </h3>
                 </div>
                 <p class="mt-2 text-gray-600 text-[20px] dark:text-neutral-400 text-center">
-                    infoe@zemy-group.com
+                    info@zemy-group.com
                 </p>
 
             </div>
